@@ -14,6 +14,11 @@
 		710A9F3819DD2F8700FE2A2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 710A9F3719DD2F8700FE2A2A /* Images.xcassets */; };
 		710A9F3B19DD2F8700FE2A2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 710A9F3919DD2F8700FE2A2A /* LaunchScreen.xib */; };
 		710A9F4719DD2F8700FE2A2A /* LJToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A9F4619DD2F8700FE2A2A /* LJToolsTests.m */; };
+		710A9F5D19DD2FD700FE2A2A /* LJDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A9F5319DD2FD700FE2A2A /* LJDeviceTool.m */; };
+		710A9F5E19DD2FD700FE2A2A /* LJFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A9F5519DD2FD700FE2A2A /* LJFileTool.m */; };
+		710A9F5F19DD2FD700FE2A2A /* LJHTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A9F5719DD2FD700FE2A2A /* LJHTTPTool.m */; };
+		710A9F6019DD2FD700FE2A2A /* LJTimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A9F5919DD2FD700FE2A2A /* LJTimeTool.m */; };
+		710A9F6119DD2FD700FE2A2A /* LJUITool.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A9F5C19DD2FD700FE2A2A /* LJUITool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,18 @@
 		710A9F4019DD2F8700FE2A2A /* LJToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LJToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		710A9F4519DD2F8700FE2A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		710A9F4619DD2F8700FE2A2A /* LJToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJToolsTests.m; sourceTree = "<group>"; };
+		710A9F5219DD2FD700FE2A2A /* LJDeviceTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJDeviceTool.h; sourceTree = "<group>"; };
+		710A9F5319DD2FD700FE2A2A /* LJDeviceTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJDeviceTool.m; sourceTree = "<group>"; };
+		710A9F5419DD2FD700FE2A2A /* LJFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJFileTool.h; sourceTree = "<group>"; };
+		710A9F5519DD2FD700FE2A2A /* LJFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJFileTool.m; sourceTree = "<group>"; };
+		710A9F5619DD2FD700FE2A2A /* LJHTTPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJHTTPTool.h; sourceTree = "<group>"; };
+		710A9F5719DD2FD700FE2A2A /* LJHTTPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJHTTPTool.m; sourceTree = "<group>"; };
+		710A9F5819DD2FD700FE2A2A /* LJTimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTimeTool.h; sourceTree = "<group>"; };
+		710A9F5919DD2FD700FE2A2A /* LJTimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJTimeTool.m; sourceTree = "<group>"; };
+		710A9F5A19DD2FD700FE2A2A /* LJTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTools.h; sourceTree = "<group>"; };
+		710A9F5B19DD2FD700FE2A2A /* LJUITool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJUITool.h; sourceTree = "<group>"; };
+		710A9F5C19DD2FD700FE2A2A /* LJUITool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJUITool.m; sourceTree = "<group>"; };
+		710A9F6219DD302000FE2A2A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +105,9 @@
 				710A9F3419DD2F8700FE2A2A /* Main.storyboard */,
 				710A9F3719DD2F8700FE2A2A /* Images.xcassets */,
 				710A9F3919DD2F8700FE2A2A /* LaunchScreen.xib */,
+				710A9F5019DD2FD700FE2A2A /* Class */,
 				710A9F2A19DD2F8700FE2A2A /* Supporting Files */,
+				710A9F6219DD302000FE2A2A /* PrefixHeader.pch */,
 			);
 			path = LJTools;
 			sourceTree = "<group>";
@@ -96,6 +115,7 @@
 		710A9F2A19DD2F8700FE2A2A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				710A9F6319DD31FB00FE2A2A /* Lib */,
 				710A9F2B19DD2F8700FE2A2A /* Info.plist */,
 				710A9F2C19DD2F8700FE2A2A /* main.m */,
 			);
@@ -117,6 +137,39 @@
 				710A9F4519DD2F8700FE2A2A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		710A9F5019DD2FD700FE2A2A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				710A9F5119DD2FD700FE2A2A /* LJTools */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		710A9F5119DD2FD700FE2A2A /* LJTools */ = {
+			isa = PBXGroup;
+			children = (
+				710A9F5A19DD2FD700FE2A2A /* LJTools.h */,
+				710A9F5219DD2FD700FE2A2A /* LJDeviceTool.h */,
+				710A9F5319DD2FD700FE2A2A /* LJDeviceTool.m */,
+				710A9F5419DD2FD700FE2A2A /* LJFileTool.h */,
+				710A9F5519DD2FD700FE2A2A /* LJFileTool.m */,
+				710A9F5619DD2FD700FE2A2A /* LJHTTPTool.h */,
+				710A9F5719DD2FD700FE2A2A /* LJHTTPTool.m */,
+				710A9F5819DD2FD700FE2A2A /* LJTimeTool.h */,
+				710A9F5919DD2FD700FE2A2A /* LJTimeTool.m */,
+				710A9F5B19DD2FD700FE2A2A /* LJUITool.h */,
+				710A9F5C19DD2FD700FE2A2A /* LJUITool.m */,
+			);
+			path = LJTools;
+			sourceTree = "<group>";
+		};
+		710A9F6319DD31FB00FE2A2A /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +273,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				710A9F3319DD2F8700FE2A2A /* ViewController.m in Sources */,
+				710A9F5E19DD2FD700FE2A2A /* LJFileTool.m in Sources */,
+				710A9F6019DD2FD700FE2A2A /* LJTimeTool.m in Sources */,
+				710A9F5D19DD2FD700FE2A2A /* LJDeviceTool.m in Sources */,
 				710A9F3019DD2F8700FE2A2A /* AppDelegate.m in Sources */,
 				710A9F2D19DD2F8700FE2A2A /* main.m in Sources */,
+				710A9F5F19DD2FD700FE2A2A /* LJHTTPTool.m in Sources */,
+				710A9F6119DD2FD700FE2A2A /* LJUITool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +344,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -326,6 +385,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -343,7 +403,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = LJTools/PrefixHeader.pch;
 				INFOPLIST_FILE = LJTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +416,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = LJTools/PrefixHeader.pch;
 				INFOPLIST_FILE = LJTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

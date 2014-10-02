@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  LJTools
+//
+//  Created by 李杰 on 14/10/2.
+//  Copyright (c) 2014年 PUPBOSS. All rights reserved.
+//
+
+#ifndef LJTools_PrefixHeader_pch
+#define LJTools_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
