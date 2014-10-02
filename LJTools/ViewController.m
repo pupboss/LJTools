@@ -16,12 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSLog(@"build版本号:%@",[LJDeviceTool getCurrentAppBuild]);
+    NSLog(@"软件版本号:%@",[LJDeviceTool getCurrentAppVersion]);
+    NSLog(@"当前设备型号:%@",[LJDeviceTool getCurrentDeviceModel:self]);
+    NSLog(@"当前系统版本:%@",[LJDeviceTool getCurrentSystemVersion]);
 }
 
 @end
