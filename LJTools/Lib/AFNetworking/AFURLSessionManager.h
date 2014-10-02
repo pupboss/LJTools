@@ -42,7 +42,6 @@
  
  - `URLSession:didBecomeInvalidWithError:`
  - `URLSession:didReceiveChallenge:completionHandler:`
- - `URLSessionDidFinishEventsForBackgroundURLSession:`
 
  ### `NSURLSessionTaskDelegate`
  
@@ -57,6 +56,7 @@
  - `URLSession:dataTask:didBecomeDownloadTask:`
  - `URLSession:dataTask:didReceiveData:`
  - `URLSession:dataTask:willCacheResponse:completionHandler:`
+ - `URLSessionDidFinishEventsForBackgroundURLSession:`
 
  ### `NSURLSessionDownloadDelegate`
 

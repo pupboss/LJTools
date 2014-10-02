@@ -22,12 +22,6 @@
 
 #import "AFNetworkReachabilityManager.h"
 
-#import <netinet/in.h>
-#import <netinet6/in6.h>
-#import <arpa/inet.h>
-#import <ifaddrs.h>
-#import <netdb.h>
-
 NSString * const AFNetworkingReachabilityDidChangeNotification = @"com.alamofire.networking.reachability.change";
 NSString * const AFNetworkingReachabilityNotificationStatusItem = @"AFNetworkingReachabilityNotificationStatusItem";
 
@@ -134,7 +128,7 @@ static void AFNetworkReachabilityReleaseCallback(const void *info) {
     return manager;
 }
 
-+ (instancetype)managerForAddress:(const void *)address {
++ (instancetype)managerForAddress:(const struct sockaddr_in *)address {
     SCNetworkReachabilityRef reachability = SCNetworkReachabilityCreateWithAddress(kCFAllocatorDefault, (const struct sockaddr *)address);
 
     AFNetworkReachabilityManager *manager = [[self alloc] initWithReachability:reachability];

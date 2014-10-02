@@ -213,7 +213,7 @@
     return [NSString stringWithFormat:@"<%@: %p, baseURL: %@, operationQueue: %@>", NSStringFromClass([self class]), self, [self.baseURL absoluteString], self.operationQueue];
 }
 
-#pragma mark - NSSecureCoding
+#pragma mark - NSecureCoding
 
 + (BOOL)supportsSecureCoding {
     return YES;
