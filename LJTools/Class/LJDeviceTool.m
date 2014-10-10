@@ -14,7 +14,7 @@
 
 
 //获得设备型号
-+ (NSString *)getCurrentDeviceModel:(UIViewController *)controller
++ (NSString *)getCurrentDeviceModel
 {
     int mib[2];
     size_t len;

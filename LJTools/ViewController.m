@@ -18,7 +18,7 @@
     [super viewDidLoad];
     NSLog(@"build版本号:%@",[LJDeviceTool getCurrentAppBuild]);
     NSLog(@"软件版本号:%@",[LJDeviceTool getCurrentAppVersion]);
-    NSLog(@"当前设备型号:%@",[LJDeviceTool getCurrentDeviceModel:self]);
+    NSLog(@"当前设备型号:%@",[LJDeviceTool getCurrentDeviceModel]);
     NSLog(@"当前系统版本:%@",[LJDeviceTool getCurrentSystemVersion]);
 }
 

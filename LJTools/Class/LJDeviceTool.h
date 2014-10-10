@@ -11,7 +11,7 @@
 @interface LJDeviceTool : NSObject
 
 //获得设备型号
-+ (NSString *)getCurrentDeviceModel:(UIViewController *)controller;
++ (NSString *)getCurrentDeviceModel;
 
 //获得系统版本
 + (NSString *)getCurrentSystemVersion;
