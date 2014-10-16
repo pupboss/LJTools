@@ -10,16 +10,32 @@
 
 @interface LJDeviceTool : NSObject
 
-//获得设备型号
+/**
+ *  获得设备型号
+ *
+ *  @return
+ */
 + (NSString *)getCurrentDeviceModel;
 
-//获得系统版本
+/**
+ *  获得系统版本
+ *
+ *  @return
+ */
 + (NSString *)getCurrentSystemVersion;
 
-//获得软件版本
+/**
+ *  获得软件版本
+ *
+ *  @return
+ */
 + (NSString *)getCurrentAppVersion;
 
-//获得build版本
+/**
+ *  获得build版本
+ *
+ *  @return 
+ */
 + (NSString *)getCurrentAppBuild;
 
 @end

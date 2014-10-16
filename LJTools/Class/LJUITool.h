@@ -9,6 +9,13 @@
 
 @interface LJUITool : NSObject
 
+/**
+ *  得到中点坐标
+ *
+ *  @param rect 当前的frame
+ *
+ *  @return 点坐标
+ */
 + (CGPoint)getPointWithFrame:(CGRect)rect;
 
 @end

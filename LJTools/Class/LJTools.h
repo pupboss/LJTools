@@ -10,3 +10,5 @@
 #import "LJFileTool.h"
 #import "LJTimeTool.h"
 #import "LJUITool.h"
+#import "UIView+LJ.h"
+#import "UIImage+LJ.h"

@@ -28,6 +28,8 @@
 		710AA01219DD443100FE2A2A /* LJHTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 710AA00A19DD443100FE2A2A /* LJHTTPTool.m */; };
 		710AA01319DD443100FE2A2A /* LJTimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 710AA00C19DD443100FE2A2A /* LJTimeTool.m */; };
 		710AA01419DD443100FE2A2A /* LJUITool.m in Sources */ = {isa = PBXBuildFile; fileRef = 710AA00F19DD443100FE2A2A /* LJUITool.m */; };
+		7117665319F010A500888A4E /* UIView+LJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7117665219F010A500888A4E /* UIView+LJ.m */; };
+		7117665619F010F800888A4E /* UIImage+LJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7117665519F010F800888A4E /* UIImage+LJ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,10 @@
 		710AA00D19DD443100FE2A2A /* LJTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTools.h; sourceTree = "<group>"; };
 		710AA00E19DD443100FE2A2A /* LJUITool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJUITool.h; sourceTree = "<group>"; };
 		710AA00F19DD443100FE2A2A /* LJUITool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJUITool.m; sourceTree = "<group>"; };
+		7117665119F010A500888A4E /* UIView+LJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJ.h"; sourceTree = "<group>"; };
+		7117665219F010A500888A4E /* UIView+LJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJ.m"; sourceTree = "<group>"; };
+		7117665419F010F800888A4E /* UIImage+LJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LJ.h"; sourceTree = "<group>"; };
+		7117665519F010F800888A4E /* UIImage+LJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LJ.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +210,7 @@
 		710AA00419DD440A00FE2A2A /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				710AA00D19DD443100FE2A2A /* LJTools.h */,
 				710AA00519DD443100FE2A2A /* LJDeviceTool.h */,
 				710AA00619DD443100FE2A2A /* LJDeviceTool.m */,
 				710AA00719DD443100FE2A2A /* LJFileTool.h */,
@@ -214,7 +221,10 @@
 				710AA00C19DD443100FE2A2A /* LJTimeTool.m */,
 				710AA00E19DD443100FE2A2A /* LJUITool.h */,
 				710AA00F19DD443100FE2A2A /* LJUITool.m */,
-				710AA00D19DD443100FE2A2A /* LJTools.h */,
+				7117665119F010A500888A4E /* UIView+LJ.h */,
+				7117665219F010A500888A4E /* UIView+LJ.m */,
+				7117665419F010F800888A4E /* UIImage+LJ.h */,
+				7117665519F010F800888A4E /* UIImage+LJ.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -323,6 +333,8 @@
 				710AA00019DD43B100FE2A2A /* AFURLResponseSerialization.m in Sources */,
 				710A9FFE19DD43B100FE2A2A /* AFURLConnectionOperation.m in Sources */,
 				710A9FF419DD43B100FE2A2A /* AFHTTPRequestOperation.m in Sources */,
+				7117665619F010F800888A4E /* UIImage+LJ.m in Sources */,
+				7117665319F010A500888A4E /* UIView+LJ.m in Sources */,
 				710AA01219DD443100FE2A2A /* LJHTTPTool.m in Sources */,
 				710A9FF619DD43B100FE2A2A /* AFHTTPSessionManager.m in Sources */,
 				710A9FFD19DD43B100FE2A2A /* AFSecurityPolicy.m in Sources */,
