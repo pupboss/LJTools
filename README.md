@@ -4,21 +4,21 @@ LJTools
 ###使用方法
 
     #import "LJTools.h"
+<!--more-->
+####Then enjoy your self
 
-Then enjoy your self
+##LJDeviceTool
 
-####LJDeviceTool
     [LJDeviceTool getCurrentAppBuild];  //得到build版本号
     [LJDeviceTool getCurrentAppVersion]; //得到app版本号
     [LJDeviceTool getCurrentDeviceModel]; //设备型号
     [LJDeviceTool getCurrentSystemVersion]; //系统OS版本
 
-####LJFileTool
+##LJFileTool
 
     [LJFileTool getFilePath:@"myDict.plist"];
     [LJFileTool writeToFileContent:@[@"tom",@"jerry",@"cook"] withFileName:@"name.plist"];
     [LJFileTool writeImageToFileName:@"photo.jpg" withImgURL:@"http:test.com/test.png"];
-    
     
     /**
      *  得到沙盒的路径
@@ -29,7 +29,6 @@ Then enjoy your self
      */
     + (NSString *)getFilePath:(NSString *)fileName;
 
-
     /**
      *  写入文件
      *
@@ -38,7 +37,6 @@ Then enjoy your self
      */
     + (void)writeToFileContent:(id)content withFileName:(NSString *)fileName;
 
-     
     /**
      *  写入网络图片
      *
@@ -47,7 +45,7 @@ Then enjoy your self
      */
     + (void)writeImageToFileName:(NSString *)imgName withImgURL:(NSString *)webURL;
      
-####LJHTTPTool
+##LJHTTPTool
 
     /**
      *  发送一个POST JSON请求
@@ -100,7 +98,7 @@ Then enjoy your self
      */
     + (void)getHTTPWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id responseHTTP))success failure:(void (^)(NSError *error))failure;
     
-####LJTimeTool
+##LJTimeTool
 
     [LJTimeTool getCurrentYear];
     [LJTimeTool getCurrentInterval];
@@ -113,14 +111,12 @@ Then enjoy your self
      */
     + (NSInteger)getCurrentYear;
 
-
     /**
      *  获取当前时段
      *
      *  @return
      */
     + (NSString *)getCurrentInterval;
-
 
     /**
      *  距离某天多少天
@@ -130,7 +126,7 @@ Then enjoy your self
      */
     + (int)dayNumberSinceDateWithFormat_yyyy_MM_dd:(NSString *)date;
      
-####LJTimeTool
+##LJTimeTool
 
     [LJTimeTool getPointWithFrame:frame];
     
@@ -143,7 +139,7 @@ Then enjoy your self
      */
     + (CGPoint)getPointWithFrame:(CGRect)rect;
      
-####UIView+LJ
+##UIView+LJ
 
     #import "UIView+LJ"
     UIView *view = [[UIView alloc] init]
@@ -158,7 +154,7 @@ Then enjoy your self
 	@property (assign, nonatomic) CGSize size;
 	@property (assign, nonatomic) CGPoint origin;
 
-####UIImage+LJ
+##UIImage+LJ
 
     //用法同上
     /**
