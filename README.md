@@ -126,9 +126,9 @@ LJTools
      */
     + (int)dayNumberSinceDateWithFormat_yyyy_MM_dd:(NSString *)date;
      
-##LJTimeTool
+##LJUITool
 
-    [LJTimeTool getPointWithFrame:frame];
+    [LJUITool getPointWithFrame:frame];
     
     /**
      *  得到中点坐标
