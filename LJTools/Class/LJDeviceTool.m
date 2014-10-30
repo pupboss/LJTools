@@ -11,8 +11,6 @@
 
 @implementation LJDeviceTool
 
-
-
 //获得设备型号
 + (NSString *)getCurrentDeviceModel
 {
