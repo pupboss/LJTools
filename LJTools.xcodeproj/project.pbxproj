@@ -23,13 +23,13 @@
 		710A9FFF19DD43B100FE2A2A /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A9FEA19DD43B100FE2A2A /* AFURLRequestSerialization.m */; };
 		710AA00019DD43B100FE2A2A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A9FEC19DD43B100FE2A2A /* AFURLResponseSerialization.m */; };
 		710AA00119DD43B100FE2A2A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 710A9FEE19DD43B100FE2A2A /* AFURLSessionManager.m */; };
-		710AA01019DD443100FE2A2A /* LJDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 710AA00619DD443100FE2A2A /* LJDeviceTool.m */; };
-		710AA01119DD443100FE2A2A /* LJFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 710AA00819DD443100FE2A2A /* LJFileTool.m */; };
-		710AA01219DD443100FE2A2A /* LJHTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 710AA00A19DD443100FE2A2A /* LJHTTPTool.m */; };
-		710AA01319DD443100FE2A2A /* LJTimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 710AA00C19DD443100FE2A2A /* LJTimeTool.m */; };
-		710AA01419DD443100FE2A2A /* LJUITool.m in Sources */ = {isa = PBXBuildFile; fileRef = 710AA00F19DD443100FE2A2A /* LJUITool.m */; };
-		7117665319F010A500888A4E /* UIView+LJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7117665219F010A500888A4E /* UIView+LJ.m */; };
-		7117665619F010F800888A4E /* UIImage+LJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7117665519F010F800888A4E /* UIImage+LJ.m */; };
+		71E4C22B1A11A7230002F726 /* LJDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E4C21D1A11A7230002F726 /* LJDeviceTool.m */; };
+		71E4C22C1A11A7230002F726 /* LJFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E4C21F1A11A7230002F726 /* LJFileTool.m */; };
+		71E4C22D1A11A7230002F726 /* LJHTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E4C2211A11A7230002F726 /* LJHTTPTool.m */; };
+		71E4C22E1A11A7230002F726 /* LJTimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E4C2231A11A7230002F726 /* LJTimeTool.m */; };
+		71E4C22F1A11A7230002F726 /* LJUITool.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E4C2261A11A7230002F726 /* LJUITool.m */; };
+		71E4C2301A11A7230002F726 /* UIImage+LJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E4C2281A11A7230002F726 /* UIImage+LJ.m */; };
+		71E4C2311A11A7230002F726 /* UIView+LJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E4C22A1A11A7230002F726 /* UIView+LJ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,21 +76,21 @@
 		710A9FEC19DD43B100FE2A2A /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		710A9FED19DD43B100FE2A2A /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		710A9FEE19DD43B100FE2A2A /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		710AA00519DD443100FE2A2A /* LJDeviceTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJDeviceTool.h; sourceTree = "<group>"; };
-		710AA00619DD443100FE2A2A /* LJDeviceTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJDeviceTool.m; sourceTree = "<group>"; };
-		710AA00719DD443100FE2A2A /* LJFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJFileTool.h; sourceTree = "<group>"; };
-		710AA00819DD443100FE2A2A /* LJFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJFileTool.m; sourceTree = "<group>"; };
-		710AA00919DD443100FE2A2A /* LJHTTPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJHTTPTool.h; sourceTree = "<group>"; };
-		710AA00A19DD443100FE2A2A /* LJHTTPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJHTTPTool.m; sourceTree = "<group>"; };
-		710AA00B19DD443100FE2A2A /* LJTimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTimeTool.h; sourceTree = "<group>"; };
-		710AA00C19DD443100FE2A2A /* LJTimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJTimeTool.m; sourceTree = "<group>"; };
-		710AA00D19DD443100FE2A2A /* LJTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTools.h; sourceTree = "<group>"; };
-		710AA00E19DD443100FE2A2A /* LJUITool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJUITool.h; sourceTree = "<group>"; };
-		710AA00F19DD443100FE2A2A /* LJUITool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJUITool.m; sourceTree = "<group>"; };
-		7117665119F010A500888A4E /* UIView+LJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJ.h"; sourceTree = "<group>"; };
-		7117665219F010A500888A4E /* UIView+LJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJ.m"; sourceTree = "<group>"; };
-		7117665419F010F800888A4E /* UIImage+LJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LJ.h"; sourceTree = "<group>"; };
-		7117665519F010F800888A4E /* UIImage+LJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LJ.m"; sourceTree = "<group>"; };
+		71E4C21C1A11A7230002F726 /* LJDeviceTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJDeviceTool.h; sourceTree = "<group>"; };
+		71E4C21D1A11A7230002F726 /* LJDeviceTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJDeviceTool.m; sourceTree = "<group>"; };
+		71E4C21E1A11A7230002F726 /* LJFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJFileTool.h; sourceTree = "<group>"; };
+		71E4C21F1A11A7230002F726 /* LJFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJFileTool.m; sourceTree = "<group>"; };
+		71E4C2201A11A7230002F726 /* LJHTTPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJHTTPTool.h; sourceTree = "<group>"; };
+		71E4C2211A11A7230002F726 /* LJHTTPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJHTTPTool.m; sourceTree = "<group>"; };
+		71E4C2221A11A7230002F726 /* LJTimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTimeTool.h; sourceTree = "<group>"; };
+		71E4C2231A11A7230002F726 /* LJTimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJTimeTool.m; sourceTree = "<group>"; };
+		71E4C2241A11A7230002F726 /* LJTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTools.h; sourceTree = "<group>"; };
+		71E4C2251A11A7230002F726 /* LJUITool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJUITool.h; sourceTree = "<group>"; };
+		71E4C2261A11A7230002F726 /* LJUITool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJUITool.m; sourceTree = "<group>"; };
+		71E4C2271A11A7230002F726 /* UIImage+LJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LJ.h"; sourceTree = "<group>"; };
+		71E4C2281A11A7230002F726 /* UIImage+LJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LJ.m"; sourceTree = "<group>"; };
+		71E4C2291A11A7230002F726 /* UIView+LJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJ.h"; sourceTree = "<group>"; };
+		71E4C22A1A11A7230002F726 /* UIView+LJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJ.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +139,6 @@
 				710A9F3419DD2F8700FE2A2A /* Main.storyboard */,
 				710A9F3719DD2F8700FE2A2A /* Images.xcassets */,
 				710A9F3919DD2F8700FE2A2A /* LaunchScreen.xib */,
-				710AA00419DD440A00FE2A2A /* Class */,
 				710A9F2A19DD2F8700FE2A2A /* Supporting Files */,
 				710A9F6219DD302000FE2A2A /* PrefixHeader.pch */,
 			);
@@ -149,6 +148,7 @@
 		710A9F2A19DD2F8700FE2A2A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				71E4C21B1A11A7230002F726 /* LJTools */,
 				710A9FCE19DD43A500FE2A2A /* Lib */,
 				710A9F2B19DD2F8700FE2A2A /* Info.plist */,
 				710A9F2C19DD2F8700FE2A2A /* main.m */,
@@ -207,26 +207,26 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
-		710AA00419DD440A00FE2A2A /* Class */ = {
+		71E4C21B1A11A7230002F726 /* LJTools */ = {
 			isa = PBXGroup;
 			children = (
-				710AA00D19DD443100FE2A2A /* LJTools.h */,
-				710AA00519DD443100FE2A2A /* LJDeviceTool.h */,
-				710AA00619DD443100FE2A2A /* LJDeviceTool.m */,
-				710AA00719DD443100FE2A2A /* LJFileTool.h */,
-				710AA00819DD443100FE2A2A /* LJFileTool.m */,
-				710AA00919DD443100FE2A2A /* LJHTTPTool.h */,
-				710AA00A19DD443100FE2A2A /* LJHTTPTool.m */,
-				710AA00B19DD443100FE2A2A /* LJTimeTool.h */,
-				710AA00C19DD443100FE2A2A /* LJTimeTool.m */,
-				710AA00E19DD443100FE2A2A /* LJUITool.h */,
-				710AA00F19DD443100FE2A2A /* LJUITool.m */,
-				7117665119F010A500888A4E /* UIView+LJ.h */,
-				7117665219F010A500888A4E /* UIView+LJ.m */,
-				7117665419F010F800888A4E /* UIImage+LJ.h */,
-				7117665519F010F800888A4E /* UIImage+LJ.m */,
+				71E4C21C1A11A7230002F726 /* LJDeviceTool.h */,
+				71E4C21D1A11A7230002F726 /* LJDeviceTool.m */,
+				71E4C21E1A11A7230002F726 /* LJFileTool.h */,
+				71E4C21F1A11A7230002F726 /* LJFileTool.m */,
+				71E4C2201A11A7230002F726 /* LJHTTPTool.h */,
+				71E4C2211A11A7230002F726 /* LJHTTPTool.m */,
+				71E4C2221A11A7230002F726 /* LJTimeTool.h */,
+				71E4C2231A11A7230002F726 /* LJTimeTool.m */,
+				71E4C2241A11A7230002F726 /* LJTools.h */,
+				71E4C2251A11A7230002F726 /* LJUITool.h */,
+				71E4C2261A11A7230002F726 /* LJUITool.m */,
+				71E4C2271A11A7230002F726 /* UIImage+LJ.h */,
+				71E4C2281A11A7230002F726 /* UIImage+LJ.m */,
+				71E4C2291A11A7230002F726 /* UIView+LJ.h */,
+				71E4C22A1A11A7230002F726 /* UIView+LJ.m */,
 			);
-			path = Class;
+			path = LJTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,21 +333,21 @@
 				710AA00019DD43B100FE2A2A /* AFURLResponseSerialization.m in Sources */,
 				710A9FFE19DD43B100FE2A2A /* AFURLConnectionOperation.m in Sources */,
 				710A9FF419DD43B100FE2A2A /* AFHTTPRequestOperation.m in Sources */,
-				7117665619F010F800888A4E /* UIImage+LJ.m in Sources */,
-				7117665319F010A500888A4E /* UIView+LJ.m in Sources */,
-				710AA01219DD443100FE2A2A /* LJHTTPTool.m in Sources */,
 				710A9FF619DD43B100FE2A2A /* AFHTTPSessionManager.m in Sources */,
 				710A9FFD19DD43B100FE2A2A /* AFSecurityPolicy.m in Sources */,
 				710A9FF519DD43B100FE2A2A /* AFHTTPRequestOperationManager.m in Sources */,
+				71E4C22C1A11A7230002F726 /* LJFileTool.m in Sources */,
 				710A9FFF19DD43B100FE2A2A /* AFURLRequestSerialization.m in Sources */,
 				710A9F3019DD2F8700FE2A2A /* AppDelegate.m in Sources */,
-				710AA01119DD443100FE2A2A /* LJFileTool.m in Sources */,
+				71E4C22E1A11A7230002F726 /* LJTimeTool.m in Sources */,
+				71E4C22B1A11A7230002F726 /* LJDeviceTool.m in Sources */,
+				71E4C2311A11A7230002F726 /* UIView+LJ.m in Sources */,
 				710A9FFB19DD43B100FE2A2A /* AFNetworkReachabilityManager.m in Sources */,
-				710AA01319DD443100FE2A2A /* LJTimeTool.m in Sources */,
 				710A9F2D19DD2F8700FE2A2A /* main.m in Sources */,
-				710AA01019DD443100FE2A2A /* LJDeviceTool.m in Sources */,
-				710AA01419DD443100FE2A2A /* LJUITool.m in Sources */,
 				710AA00119DD43B100FE2A2A /* AFURLSessionManager.m in Sources */,
+				71E4C2301A11A7230002F726 /* UIImage+LJ.m in Sources */,
+				71E4C22F1A11A7230002F726 /* LJUITool.m in Sources */,
+				71E4C22D1A11A7230002F726 /* LJHTTPTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
