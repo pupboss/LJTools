@@ -15,7 +15,6 @@
     [content writeToFile:[self getFilePath:fileName] atomically:YES];
 }
 
-#pragma mark 
 + (NSString *)getFilePath:(NSString *)fileName
 {
     if (!fileName) return @"error";

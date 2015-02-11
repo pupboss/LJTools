@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-@class UIViewController;
 
 @interface LJDeviceTool : NSObject
 
