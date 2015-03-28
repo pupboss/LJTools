@@ -132,15 +132,10 @@
 		710A9F2919DD2F8700FE2A2A /* LJTools */ = {
 			isa = PBXGroup;
 			children = (
-				710A9F2E19DD2F8700FE2A2A /* AppDelegate.h */,
-				710A9F2F19DD2F8700FE2A2A /* AppDelegate.m */,
+				710A9F3419DD2F8700FE2A2A /* Main.storyboard */,
 				710A9F3119DD2F8700FE2A2A /* ViewController.h */,
 				710A9F3219DD2F8700FE2A2A /* ViewController.m */,
-				710A9F3419DD2F8700FE2A2A /* Main.storyboard */,
-				710A9F3719DD2F8700FE2A2A /* Images.xcassets */,
-				710A9F3919DD2F8700FE2A2A /* LaunchScreen.xib */,
 				710A9F2A19DD2F8700FE2A2A /* Supporting Files */,
-				710A9F6219DD302000FE2A2A /* PrefixHeader.pch */,
 			);
 			path = LJTools;
 			sourceTree = "<group>";
@@ -148,10 +143,15 @@
 		710A9F2A19DD2F8700FE2A2A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				710A9F2E19DD2F8700FE2A2A /* AppDelegate.h */,
+				710A9F2F19DD2F8700FE2A2A /* AppDelegate.m */,
+				710A9F3719DD2F8700FE2A2A /* Images.xcassets */,
+				710A9F3919DD2F8700FE2A2A /* LaunchScreen.xib */,
 				71E4C21B1A11A7230002F726 /* LJTools */,
 				710A9FCE19DD43A500FE2A2A /* Lib */,
 				710A9F2B19DD2F8700FE2A2A /* Info.plist */,
 				710A9F2C19DD2F8700FE2A2A /* main.m */,
+				710A9F6219DD302000FE2A2A /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -474,7 +474,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = LJTools/PrefixHeader.pch;
 				INFOPLIST_FILE = LJTools/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -487,7 +487,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = LJTools/PrefixHeader.pch;
 				INFOPLIST_FILE = LJTools/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
