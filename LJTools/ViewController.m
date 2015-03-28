@@ -21,7 +21,15 @@
     NSLog(@"当前设备型号:%@",[LJDeviceTool getCurrentDeviceModel]);
     NSLog(@"当前系统版本:%@",[LJDeviceTool getCurrentSystemVersion]);
     
-    NSLog(@"当前年份:%ld",(long)[LJTimeTool getCurrentYear]);
+    NSLog(@"当前年份:%ld",(long)[LJTimeTool getCurrentWeek]);
+//    
+//    NSArray *arr = @[@"", @"ss", @" "];
+//    
+//    NSArray *arr3 = @[@"", @"s  s", @" "];
+//    
+//    NSArray *arr2 = @[arr, arr3];
+//    
+//    NSLog(@"%@",arr2);
 }
 
 @end

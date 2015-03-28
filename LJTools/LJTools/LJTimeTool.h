@@ -10,13 +10,6 @@
 @interface LJTimeTool : NSObject
 
 /**
- *  获取年份
- *
- *  @return
- */
-+ (NSInteger)getCurrentYear;
-
-/**
  *  获取当前时段
  *
  *  @return
@@ -31,5 +24,16 @@
  *  @return 天数
  */
 + (int)dayNumberSinceDateWithFormat_yyyy_MM_dd:(NSString *)date;
+
++ (NSInteger)getCurrentWeek;
+
+
++ (NSInteger)getCurrentMonth;
+
+
++ (NSInteger)getCurrentWeekDay;
+
+
++ (NSInteger)getCurrentYear;
 
 @end
