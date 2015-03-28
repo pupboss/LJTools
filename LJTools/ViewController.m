@@ -20,6 +20,8 @@
     NSLog(@"软件版本号:%@",[LJDeviceTool getCurrentAppVersion]);
     NSLog(@"当前设备型号:%@",[LJDeviceTool getCurrentDeviceModel]);
     NSLog(@"当前系统版本:%@",[LJDeviceTool getCurrentSystemVersion]);
+    
+    NSLog(@"当前年份:%ld",(long)[LJTimeTool getCurrentYear]);
 }
 
 @end
