@@ -4,15 +4,15 @@ LJTools
 ###使用方法
 
     #import "LJTools.h"
-<!--more-->
+
 ####Then enjoy your self
 
 ##LJDeviceTool
 
-    [LJDeviceTool getCurrentAppBuild];  //得到build版本号
-    [LJDeviceTool getCurrentAppVersion]; //得到app版本号
+    [LJDeviceTool getCurrentAppBuild];  //得到 build 版本号
+    [LJDeviceTool getCurrentAppVersion]; //得到 app 版本号
     [LJDeviceTool getCurrentDeviceModel]; //设备型号
-    [LJDeviceTool getCurrentSystemVersion]; //系统OS版本
+    [LJDeviceTool getCurrentSystemVersion]; //系统 OS 版本
 
 ##LJFileTool
 
@@ -41,14 +41,14 @@ LJTools
      *  写入网络图片
      *
      *  @param imgName 图片的文件名
-     *  @param webURL  图片的URL
+     *  @param webURL  图片的 URL
      */
     + (void)writeImageToFileName:(NSString *)imgName withImgURL:(NSString *)webURL;
      
 ##LJHTTPTool
 
     /**
-     *  发送一个POST JSON请求
+     *  发送一个 POST JSON 请求
      *
      *  @param url     请求路径
      *  @param params  请求参数
@@ -58,7 +58,7 @@ LJTools
     + (void)postJSONWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id responseJSON))success failure:(void (^)(NSError *error))failure;
 
     /**
-     *  发送一个POST HTTP请求
+     *  发送一个 POST HTTP 请求
      *
      *  @param url     请求路径
      *  @param params  请求参数
@@ -68,7 +68,7 @@ LJTools
     + (void)postHTTPWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id responseHTTP))success failure:(void (^)(NSError *error))failure;
 
     /**
-     *  发送一个POST请求(上传文件数据)
+     *  发送一个 POST 请求(上传文件数据)
      *
      *  @param url     请求路径
      *  @param params  请求参数
@@ -79,7 +79,7 @@ LJTools
     + (void)postWithURL:(NSString *)url params:(NSDictionary *)params formDataArray:(NSArray *)formDataArray success:(void (^)(id json))success failure:(void (^)(NSError *error))failure;
 
     /**
-     *  发送一个GETJSON请求
+     *  发送一个 GET JSON 请求
      *
      *  @param url     请求路径
      *  @param params  请求参数
@@ -89,7 +89,7 @@ LJTools
     + (void)getJSONWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id responseJSON))success failure:(void (^)(NSError *error))failure;
 
     /**
-     *  发送一个GET HTTP请求
+     *  发送一个 GET HTTP 请求
      *
      *  @param url     请求路径
      *  @param params  请求参数
