@@ -29,16 +29,18 @@
     return [dateComponent weekday];
 }
 
-+ (NSInteger)getCurrentYear {
++ (NSInteger)getCurrentYear
+{
     NSDate *now = [NSDate date];
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSUInteger unitFlags = NSYearCalendarUnit;
+    NSUInteger unitFlags = NSCalendarUnitYear;
     NSDateComponents *dateComponent = [calendar components:unitFlags fromDate:now];
     
     return [dateComponent year];
 }
 
-+ (NSInteger)getCurrentMonth {
++ (NSInteger)getCurrentMonth
+{
     NSDate *now = [NSDate date];
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSUInteger unitFlags = NSCalendarUnitMonth;
@@ -47,10 +49,11 @@
     return [dateComponent month];
 }
 
-+ (NSString *)getCurrentInterval {
++ (NSString *)getCurrentInterval
+{
     NSDate *now = [NSDate date];
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSUInteger unitFlags =  NSHourCalendarUnit;
+    NSUInteger unitFlags = NSCalendarUnitHour;
     NSDateComponents *dateComponent = [calendar components:unitFlags fromDate:now];
     
     long hour = [dateComponent hour];
@@ -70,7 +73,8 @@
     else return @"error";
 }
 
-+ (int)dayNumberSinceDateWithFormat_yyyy_MM_dd:(NSString *)date {
++ (NSInteger)dayNumberSinceDateWithFormat_yyyy_MM_dd:(NSString *)date
+{
     NSDateFormatter * dm = [[NSDateFormatter alloc]init];
     
     [dm setDateFormat:@"yyyy-MM-dd"];

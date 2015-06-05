@@ -23,17 +23,14 @@
  *
  *  @return 天数
  */
-+ (int)dayNumberSinceDateWithFormat_yyyy_MM_dd:(NSString *)date;
++ (NSInteger)dayNumberSinceDateWithFormat_yyyy_MM_dd:(NSString *)date;
 
 + (NSInteger)getCurrentWeek;
 
-
-+ (NSInteger)getCurrentMonth;
-
-
 + (NSInteger)getCurrentWeekDay;
 
-
 + (NSInteger)getCurrentYear;
+
++ (NSInteger)getCurrentMonth;
 
 @end
