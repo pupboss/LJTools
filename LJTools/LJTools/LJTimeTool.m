@@ -1,7 +1,7 @@
 //
 //  LJTimeTool.m
 //
-//  Created by 李杰 on 14/9/22.
+//  Created by Li Jie on 14/9/22.
 //  Copyright (c) 2014年 PUPBOSS. All rights reserved.
 //
 
@@ -29,8 +29,8 @@
     return [dateComponent weekday];
 }
 
-+ (NSInteger)getCurrentYear
-{
++ (NSInteger)getCurrentYear {
+    
     NSDate *now = [NSDate date];
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSUInteger unitFlags = NSCalendarUnitYear;
@@ -39,8 +39,8 @@
     return [dateComponent year];
 }
 
-+ (NSInteger)getCurrentMonth
-{
++ (NSInteger)getCurrentMonth {
+    
     NSDate *now = [NSDate date];
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSUInteger unitFlags = NSCalendarUnitMonth;
@@ -49,8 +49,8 @@
     return [dateComponent month];
 }
 
-+ (NSString *)getCurrentInterval
-{
++ (NSString *)getCurrentInterval {
+    
     NSDate *now = [NSDate date];
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSUInteger unitFlags = NSCalendarUnitHour;
@@ -73,8 +73,8 @@
     else return @"error";
 }
 
-+ (NSInteger)dayNumberSinceDateWithFormat_yyyy_MM_dd:(NSString *)date
-{
++ (NSInteger)dayNumberSinceDateWithFormat_yyyy_MM_dd:(NSString *)date {
+    
     NSDateFormatter * dm = [[NSDateFormatter alloc]init];
     
     [dm setDateFormat:@"yyyy-MM-dd"];

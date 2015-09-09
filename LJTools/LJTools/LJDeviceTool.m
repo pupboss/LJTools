@@ -1,7 +1,7 @@
 //
 //  LJDeviceTool.m
 //
-//  Created by 李杰 on 14/9/22.
+//  Created by Li Jie on 14/9/22.
 //  Copyright (c) 2014年 PUPBOSS. All rights reserved.
 //
 
@@ -14,8 +14,7 @@
 
 
 //获得设备型号
-+ (NSString *)getCurrentDeviceModel
-{
++ (NSString *)getCurrentDeviceModel {
     int mib[2];
     size_t len;
     char *machine;
@@ -87,22 +86,22 @@
 }
 
 //获得系统版本
-+ (NSString *)getCurrentSystemVersion
-{
++ (NSString *)getCurrentSystemVersion {
+    
     return [[UIDevice currentDevice] systemVersion];
 }
 
 //获得软件版本
-+ (NSString *)getCurrentAppVersion
-{
++ (NSString *)getCurrentAppVersion {
+    
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
     NSString *app_Version = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
     return app_Version;
 }
 
 //获得build版本
-+ (NSString *)getCurrentAppBuild
-{
++ (NSString *)getCurrentAppBuild {
+    
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
     NSString *app_build = [infoDictionary objectForKey:@"CFBundleVersion"];
     return app_build;

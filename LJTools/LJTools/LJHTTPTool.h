@@ -1,7 +1,7 @@
 //
 //  LJHTTPTool.h
 //
-//  Created by 李杰 on 14-9-17.
+//  Created by Li Jie on 14-9-17.
 //  Copyright (c) 2014年 PUPBOSS. All rights reserved.
 //
 

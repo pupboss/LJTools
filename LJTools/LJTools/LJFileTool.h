@@ -1,7 +1,7 @@
 //
 //  LJFileTool.h
 //
-//  Created by 李杰 on 14/9/22.
+//  Created by Li Jie on 14/9/22.
 //  Copyright (c) 2014年 PUPBOSS. All rights reserved.
 //
 
@@ -25,7 +25,7 @@
  *  @param content  要写入的内容 通常为字典类型、数组类型
  *  @param fileName 要写的文件名
  */
-+ (void)writeToFileContent:(id)content withFileName:(NSString *)fileName;
++ (void)writeContent:(id)content toFileWithFileName:(NSString *)fileName;
 
 /**
  *  写入网络图片

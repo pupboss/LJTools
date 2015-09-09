@@ -17,7 +17,7 @@ LJTools
 ##LJFileTool
 
     [LJFileTool getFilePath:@"myDict.plist"];
-    [LJFileTool writeToFileContent:@[@"tom",@"jerry",@"cook"] withFileName:@"name.plist"];
+    [LJFileTool writeContent:@[@"tom",@"jerry",@"cook"] toFileWithFileName:@"name.plist"];
     [LJFileTool writeImageToFileName:@"photo.jpg" withImgURL:@"http:test.com/test.png"];
     
     /**

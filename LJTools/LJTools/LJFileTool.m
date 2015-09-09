@@ -1,7 +1,7 @@
 //
 //  LJFileTool.m
 //
-//  Created by 李杰 on 14/9/22.
+//  Created by Li Jie on 14/9/22.
 //  Copyright (c) 2014年 PUPBOSS. All rights reserved.
 //
 
@@ -9,14 +9,14 @@
 
 @implementation LJFileTool
 
-+ (void)writeToFileContent:(id)content withFileName:(NSString *)fileName
-{
++ (void)writeContent:(id)content toFileWithFileName:(NSString *)fileName {
+    
     if (!content) return;
     [content writeToFile:[self getFilePath:fileName] atomically:YES];
 }
 
-+ (NSString *)getFilePath:(NSString *)fileName
-{
++ (NSString *)getFilePath:(NSString *)fileName {
+    
     if (!fileName) return @"error";
     NSString *home = NSHomeDirectory();
     
@@ -27,13 +27,13 @@
     return filePath;
 }
 
-+ (void)writeImageToFileName:(NSString *)imgName withImgURL:(NSString *)webURL
-{
++ (void)writeImageToFileName:(NSString *)imgName withImgURL:(NSString *)webURL {
+    
     if (!webURL) return;
     NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:webURL]];
     if (!data) return;
     UIImage *img = [[UIImage alloc] initWithData:data];
-    [self writeToFileContent:UIImagePNGRepresentation(img) withFileName:imgName];
+    [self writeContent:UIImagePNGRepresentation(img) toFileWithFileName:imgName];
 }
 
 @end
