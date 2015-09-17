@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@class AFHTTPRequestOperation;
 
 @interface LJHTTPTool : NSObject
 
@@ -48,7 +49,7 @@
  *  @param success 请求成功后的回调
  *  @param failure 请求失败后的回调
  */
-+ (void)getJSONWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id responseJSON))success failure:(void (^)(NSError *error))failure;
++ (void)getJSONWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id responseJSON))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 
 /**
  *  发送一个GET HTTP请求

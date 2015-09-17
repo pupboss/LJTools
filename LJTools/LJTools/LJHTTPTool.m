@@ -64,7 +64,7 @@
     }];
 }
 
-+ (void)getJSONWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure {
++ (void)getJSONWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *))failure {
     
     AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
     
@@ -75,7 +75,7 @@
          }
      } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
          if (failure) {
-             failure(error);
+             failure(operation, error);
          }
      }];
 }
