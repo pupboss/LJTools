@@ -11,9 +11,6 @@
 
 @implementation LJDeviceTool
 
-
-
-//获得设备型号
 + (NSString *)getCurrentDeviceModel {
     int mib[2];
     size_t len;
@@ -27,6 +24,14 @@
     
     NSString *platform = [NSString stringWithCString:machine encoding:NSASCIIStringEncoding];
     free(machine);
+    
+    if ([platform isEqualToString:@"AppleTV2,1"]) return @"Apple TV 2G (A1378)";
+    if ([platform isEqualToString:@"AppleTV3,1"]) return @"Apple TV 3G (A1427)";
+    if ([platform isEqualToString:@"AppleTV3,2"]) return @"Apple TV 3G (A1469)";
+    if ([platform isEqualToString:@"AppleTV5,3"]) return @"Apple TV 4G (A1625)";
+    
+    if ([platform isEqualToString:@"Watch1,1"]) return @"Apple Watch (A1553)";
+    if ([platform isEqualToString:@"Watch1,2"]) return @"Apple Watch (A1554/A1638)";
     
     if ([platform isEqualToString:@"iPhone1,1"]) return @"iPhone 2G (A1203)";
     if ([platform isEqualToString:@"iPhone1,2"]) return @"iPhone 3G (A1241/A1324)";
@@ -45,6 +50,7 @@
     if ([platform isEqualToString:@"iPhone7,2"]) return @"iPhone 6 (A1549/A1586)";
     if ([platform isEqualToString:@"iPhone8,1"]) return @"iPhone 6s (A1633/A1688)";
     if ([platform isEqualToString:@"iPhone8,2"]) return @"iPhone 6s Plus (A1634/A1687)";
+    if ([platform isEqualToString:@"iPhone8,4"]) return @"iPhone SE (A1662/A1723/A1724)";
     
     if ([platform isEqualToString:@"iPod1,1"])   return @"iPod Touch 1G (A1213)";
     if ([platform isEqualToString:@"iPod2,1"])   return @"iPod Touch 2G (A1288)";
@@ -79,22 +85,28 @@
     if ([platform isEqualToString:@"iPad4,7"])   return @"iPad Mini 3 (A1599)";
     if ([platform isEqualToString:@"iPad4,8"])   return @"iPad Mini 3 (A1600)";
     if ([platform isEqualToString:@"iPad4,9"])   return @"iPad Mini 3 (A1601)";
+    if ([platform isEqualToString:@"iPad5,1"])   return @"iPad mini 4 (A1538)";
+    if ([platform isEqualToString:@"iPad5,2"])   return @"iPad mini 4 (A1550)";
     
     if ([platform isEqualToString:@"iPad5,3"])   return @"iPad Air 2 (A1566)";
     if ([platform isEqualToString:@"iPad5,4"])   return @"iPad Air 2 (A1567)";
+    
+    if ([platform isEqualToString:@"iPad6,3"])   return @"iPad Pro (9.7 inch A1673)";
+    if ([platform isEqualToString:@"iPad6,4"])   return @"iPad Pro (9.7 inch A1674/A1675)";
+    
+    if ([platform isEqualToString:@"iPad6,7"])   return @"iPad Pro (12.9 inch A1584)";
+    if ([platform isEqualToString:@"iPad6,8"])   return @"iPad Pro (12.9 inch A1652)";
     
     if ([platform isEqualToString:@"i386"])      return @"iPhone Simulator";
     if ([platform isEqualToString:@"x86_64"])    return @"iPhone Simulator";
     return platform;
 }
 
-//获得系统版本
 + (NSString *)getCurrentSystemVersion {
     
     return [[UIDevice currentDevice] systemVersion];
 }
 
-//获得软件版本
 + (NSString *)getCurrentAppVersion {
     
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
@@ -102,7 +114,6 @@
     return app_Version;
 }
 
-//获得build版本
 + (NSString *)getCurrentAppBuild {
     
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
@@ -110,5 +121,11 @@
     return app_build;
 }
 
++ (NSString *)getCurrentAppName {
+    
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    NSString *app_Version = [infoDictionary objectForKey:@"CFBundleName"];
+    return app_Version;
+}
 
 @end

@@ -23,13 +23,11 @@
     
     NSLog(@"当前年份:%ld",(long)[LJTimeTool getCurrentWeek]);
     
-    [LJHTTPTool getJSONWithURL:@"http://" params:nil success:^(id responseJSON) {
+    [LJHTTPTool getJSONWithURL:@"https://api.douban.com/v2/book/1220562" params:nil success:^(id responseJSON) {
         
-        NSLog(@"%@", responseJSON);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@\n----\n%@", operation, error);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        
     }];
-
 }
 
 @end

@@ -6,102 +6,120 @@
 //
 
 #import "LJHTTPTool.h"
+#import "LJDeviceTool.h"
 #import "AFNetworking.h"
+
+AFHTTPSessionManager *_mgr;
 
 @implementation LJHTTPTool
 
 + (void)postJSONWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure {
     
-    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
+    if (!_mgr) {
+        
+        _mgr = [AFHTTPSessionManager manager];
+    }
     
-    [mgr POST:url parameters:params
-      success:^(AFHTTPRequestOperation *operation, id responseObject) {
-          if (success) {
-              success(responseObject);
-          }
-      } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-          if (failure) {
-              failure(error);
-          }
-      }];
-}
-
-+ (void)postHTTPWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure {
+    [_mgr.requestSerializer setValue:[NSString stringWithFormat:@"%@/%@ (%@; iOS%@)", [LJDeviceTool getCurrentAppName], [LJDeviceTool getCurrentAppVersion], [LJDeviceTool getCurrentDeviceModel], [LJDeviceTool getCurrentSystemVersion]] forHTTPHeaderField:@"User-Agent"];
     
-    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
-    mgr.responseSerializer = [AFHTTPResponseSerializer serializer];
-    
-    
-    [mgr POST:url parameters:params
-      success:^(AFHTTPRequestOperation *operation, id responseObject) {
-          if (success) {
-              success(responseObject);
-          }
-      } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-          if (failure) {
-              failure(error);
-          }
-      }];
-}
-
-+ (void)postWithURL:(NSString *)url params:(NSDictionary *)params formDataArray:(NSArray *)formDataArray success:(void (^)(id))success failure:(void (^)(NSError *))failure {
-    
-    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
-    
-    
-    [mgr POST:url parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> totalFormData) {
-        for (LJFormData *formData in formDataArray) {
-            [totalFormData appendPartWithFileData:formData.data name:formData.name fileName:formData.filename mimeType:formData.mimeType];
-        }
-    } success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [_mgr POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
         if (success) {
+            
             success(responseObject);
         }
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
         if (failure) {
+            
             failure(error);
         }
     }];
 }
 
-+ (void)getJSONWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *))failure {
++ (void)postHTTPWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure {
     
-    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
+    if (!_mgr) {
+        
+        _mgr = [AFHTTPSessionManager manager];
+    }
     
-    [mgr GET:url parameters:params
-     success:^(AFHTTPRequestOperation *operation, id responseObject) {
-         if (success) {
-             success(responseObject);
-         }
-     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-         if (failure) {
-             failure(operation, error);
-         }
-     }];
+    [_mgr.requestSerializer setValue:[NSString stringWithFormat:@"%@/%@ (%@; iOS%@)", [LJDeviceTool getCurrentAppName], [LJDeviceTool getCurrentAppVersion], [LJDeviceTool getCurrentDeviceModel], [LJDeviceTool getCurrentSystemVersion]] forHTTPHeaderField:@"User-Agent"];
+    
+    _mgr.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    [_mgr POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        if (success) {
+            
+            success(responseObject);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        if (failure) {
+            
+            failure(error);
+        }
+    }];
+}
+
+
++ (void)getJSONWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSURLSessionDataTask *task, NSError *))failure {
+    
+    if (!_mgr) {
+        
+        _mgr = [AFHTTPSessionManager manager];
+    }
+    
+    [_mgr.requestSerializer setValue:[NSString stringWithFormat:@"%@/%@ (%@; iOS%@)", [LJDeviceTool getCurrentAppName], [LJDeviceTool getCurrentAppVersion], [LJDeviceTool getCurrentDeviceModel], [LJDeviceTool getCurrentSystemVersion]] forHTTPHeaderField:@"User-Agent"];
+    
+    [_mgr GET:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        if (success) {
+#ifdef DEBUG
+            NSLog(@"%@", responseObject);
+#endif
+            success(responseObject);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        if (failure) {
+            
+            failure(task, error);
+        }
+    }];
 }
 
 + (void)getHTTPWithURL:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure {
     
-    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
-    mgr.responseSerializer = [AFHTTPResponseSerializer serializer];
+    if (!_mgr) {
+        
+        _mgr = [AFHTTPSessionManager manager];
+    }
     
-    [mgr GET:url parameters:params
-     success:^(AFHTTPRequestOperation *operation, id responseObject) {
-         if (success) {
-             success(responseObject);
-         }
-     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-         if (failure) {
-             failure(error);
-         }
-     }];
+    [_mgr.requestSerializer setValue:[NSString stringWithFormat:@"%@/%@ (%@; iOS%@)", [LJDeviceTool getCurrentAppName], [LJDeviceTool getCurrentAppVersion], [LJDeviceTool getCurrentDeviceModel], [LJDeviceTool getCurrentSystemVersion]] forHTTPHeaderField:@"User-Agent"];
+    
+    _mgr.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    [_mgr GET:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        if (success) {
+            
+            success(responseObject);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        if (failure) {
+            
+            failure(error);
+        }
+    }];
 }
 
 @end
 
-/**
- *  用来封装文件数据的模型
- */
+
 @implementation LJFormData
 
 @end
